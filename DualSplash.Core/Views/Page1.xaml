@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExDollar.Test.Vanilla.Core.Views.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin Forms!" />
+
+            <Switch x:Name="swchLoadEvent"  IsToggled="{Binding ToggglePageLoadSwitch}" Toggled="Switch_OnToggled" IsVisible="False" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
