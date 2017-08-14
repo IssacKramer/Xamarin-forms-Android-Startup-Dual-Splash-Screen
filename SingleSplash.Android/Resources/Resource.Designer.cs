@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ExDollar.Test.Vanilla.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("SingleSplash.Android.Resource", IsApplication=true)]
 
-namespace ExDollar.Test.Vanilla.Android
+namespace SingleSplash.Android
 {
 	
 	
@@ -26,7 +26,7 @@ namespace ExDollar.Test.Vanilla.Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ExDollar.Test.Vanilla.Android.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::SingleSplash.Android.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

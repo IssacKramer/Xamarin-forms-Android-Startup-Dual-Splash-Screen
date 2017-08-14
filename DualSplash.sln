@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DualSplash.Core", "..\DualSplash.Core\DualSplash.Core.csproj", "{FDDECF9A-2CB3-419B-A077-BFBAA1031A29}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSplash.Android", "..\SingleSplash.Android\SingleSplash.Android.csproj", "{87B9E286-0B35-46B5-86FA-A3720CBB75D0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualSplash.Android", "..\DualSplash.Android\DualSplash.Android.csproj", "{33772F00-8EFD-48A3-A4CB-19A438A7680A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Core", "10. Core", "{A8FA68CB-0DBD-453D-B813-003BDB108DBE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20. Problem - SingleSplash", "20. Problem - SingleSplash", "{123E40F6-E8D6-47DF-946A-7353F73FAE0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30. Solution - DualSplash", "30. Solution - DualSplash", "{BC7CB8C6-77A8-4981-AEB3-BF1A9D976937}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DualSplash.Core", "DualSplash.Core\DualSplash.Core.csproj", "{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSplash.Android", "SingleSplash.Android\SingleSplash.Android.csproj", "{87B9E286-0B35-46B5-86FA-A3720CBB75D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualSplash.Android", "DualSplash.Android\DualSplash.Android.csproj", "{33772F00-8EFD-48A3-A4CB-19A438A7680A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FDDECF9A-2CB3-419B-A077-BFBAA1031A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDDECF9A-2CB3-419B-A077-BFBAA1031A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDDECF9A-2CB3-419B-A077-BFBAA1031A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDDECF9A-2CB3-419B-A077-BFBAA1031A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87B9E286-0B35-46B5-86FA-A3720CBB75D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87B9E286-0B35-46B5-86FA-A3720CBB75D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B9E286-0B35-46B5-86FA-A3720CBB75D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -42,7 +42,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FDDECF9A-2CB3-419B-A077-BFBAA1031A29} = {A8FA68CB-0DBD-453D-B813-003BDB108DBE}
+		{7FB7AC69-309F-4684-8D07-96D4ABA0F1F2} = {A8FA68CB-0DBD-453D-B813-003BDB108DBE}
 		{87B9E286-0B35-46B5-86FA-A3720CBB75D0} = {123E40F6-E8D6-47DF-946A-7353F73FAE0E}
 		{33772F00-8EFD-48A3-A4CB-19A438A7680A} = {BC7CB8C6-77A8-4981-AEB3-BF1A9D976937}
 	EndGlobalSection

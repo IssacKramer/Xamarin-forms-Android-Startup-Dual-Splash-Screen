@@ -1,12 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExDollar.Test.Vanilla.Core.Views.Page1">
+             x:Class="DualSplash.Core.Views.Page1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <Switch x:Name="swchLoadEvent"  IsToggled="{Binding ToggglePageLoadSwitch}" Toggled="Switch_OnToggled" IsVisible="False" />
-        </StackLayout>
+            <Label Text="Label1:" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Label2:" Grid.Row="0" Grid.Column="3"/>
+            <Label Text="Label3:" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="Label4:" Grid.Row="1" Grid.Column="3"/>
+            <Label Text="Label5:" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="Label16" Grid.Row="2" Grid.Column="3"/>
+            <Switch x:Name="swchLoadEvent"  Grid.Row="2" Grid.Column="2" IsToggled="{Binding ToggglePageLoadSwitch}" Toggled="Switch_OnToggled" IsVisible="False" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

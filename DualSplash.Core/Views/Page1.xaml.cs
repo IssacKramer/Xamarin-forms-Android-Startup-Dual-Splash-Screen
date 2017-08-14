@@ -1,11 +1,10 @@
 ﻿using System.Threading.Tasks;
-using ExDollar.Test.Vanilla.Core.ViewModels;
+using DualSplash.Core.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Diagnostics;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace ExDollar.Test.Vanilla.Core.Views
+namespace DualSplash.Core.Views
 {
 	
 	public partial class Page1 : ContentPage

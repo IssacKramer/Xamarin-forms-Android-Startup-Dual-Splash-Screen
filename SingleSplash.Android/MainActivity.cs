@@ -1,10 +1,10 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using ExDollar.Test.Vanilla.Core;
 using System.Diagnostics;
+using DualSplash.Core;
 
-namespace ExDollar.Test.Vanilla.Android
+namespace SingleSplash.Android
 {
     [Activity(Label = "ExDollar.Test.Vanilla.Android", MainLauncher = true , 
         Icon = "@drawable/icon",
@@ -32,8 +32,8 @@ namespace ExDollar.Test.Vanilla.Android
 
         protected override void OnCreate(Bundle bundle)
         {
-//            TabLayoutResource = Resource.Layout.Tabbar;
-  //          ToolbarResource = Resource.Layout.Toolbar;
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
 
             try
             {
@@ -71,7 +71,7 @@ namespace ExDollar.Test.Vanilla.Android
 #endif
 
 
-                LoadApplication(new Core.App());
+                LoadApplication(new App());
 
 
 #if TRACE

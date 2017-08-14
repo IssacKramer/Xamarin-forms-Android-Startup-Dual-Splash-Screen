@@ -1,8 +1,8 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using DualSplash.Core.Views;
 using Xamarin.Forms;
 
-namespace ExDollar.Test.Vanilla.Core
+namespace DualSplash.Core
 {
 
     [Xamarin.Forms.Internals.Preserve(AllMembers = true)]
@@ -38,7 +38,7 @@ namespace ExDollar.Test.Vanilla.Core
 
 
             //var container = AppContainer.Container;
-            var page1 = new Views.Page1();
+            var page1 = new Page1();
             //var dollarPage = container.Resolve<Page1>();
             RootNavigation = new NavigationPage(page1);
 #if TRACE

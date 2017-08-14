@@ -87,12 +87,6 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExDollar.Test.Vanilla.Core\ExDollar.Test.Vanilla.Core.csproj">
-      <Project>{63764f2d-0245-4347-9aa2-927beab70b2e}</Project>
-      <Name>ExDollar.Test.Vanilla.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
