@@ -31,3 +31,5 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 /DualSplash.Android/obj
+/DualSplash/.vs
+/DualSplash.Android/DualSplash.Android.csproj.user
