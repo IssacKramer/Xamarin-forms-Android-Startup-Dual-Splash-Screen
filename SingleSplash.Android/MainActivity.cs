@@ -18,12 +18,12 @@ namespace SingleSplash.Android
 #if TRACE
 
             // AtrizA.Common.Utils.Utils.globalStopWatch = new Stopwatch();
-            App.stopWatch = new Stopwatch();
+            SingleSplashApp.stopWatch = new Stopwatch();
             System.Diagnostics.Trace.WriteLine($"\n ---------------------------------------------------------------------------------" +
                                                $"\n ---------------------------------------------------------------------------------");
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Starting MainActivity Constructor:  {App.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Starting MainActivity Constructor:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
 
-            App.stopWatch.Start();
+            SingleSplashApp.stopWatch.Start();
             //AtrizA.Common.Utils.Utils.globalStopWatch.Start();
 
 #endif
@@ -41,9 +41,9 @@ namespace SingleSplash.Android
 #if TRACE
 
                 //                AtrizA.Common.Utils.Utils.globalStopWatch = new Stopwatch();
-                App.stopWatch.Stop();
-                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity ----- OnCreate:  {App.stopWatch.Elapsed.TotalSeconds}");
-                App.stopWatch.Start();
+                SingleSplashApp.stopWatch.Stop();
+                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity ----- OnCreate:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+                SingleSplashApp.stopWatch.Start();
                 //                AtrizA.Common.Utils.Utils.globalStopWatch.Start();
 
 #endif
@@ -52,9 +52,9 @@ namespace SingleSplash.Android
 
 #if TRACE
 
-                App.stopWatch.Stop();
-                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity -OnCreate---------Before Forms.Init:  {App.stopWatch.Elapsed.TotalSeconds}");
-                App.stopWatch.Start();
+                SingleSplashApp.stopWatch.Stop();
+                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity -OnCreate---------Before Forms.Init:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+                SingleSplashApp.stopWatch.Start();
 
 #endif
 
@@ -63,20 +63,20 @@ namespace SingleSplash.Android
 
 #if TRACE
 
-                App.stopWatch.Stop();
-                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity -OnCreate---------AFTER Forms.Init:  {App.stopWatch.Elapsed.TotalSeconds}");
-                System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach BEFORE LoadApplication( App.......  ");
-                App.stopWatch.Start();
+                SingleSplashApp.stopWatch.Stop();
+                System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity -OnCreate---------AFTER Forms.Init:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+                System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach BEFORE LoadApplication( SingleSplashApp.......  ");
+                SingleSplashApp.stopWatch.Start();
 
 #endif
 
 
-                LoadApplication(new App());
+                LoadApplication(new SingleSplashApp());
 
 
 #if TRACE
-                //App.stopWatch.Stop();
-                System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach After LoadApplication( App....... {App.stopWatch.Elapsed.TotalSeconds} ");
+                //SingleSplashApp.stopWatch.Stop();
+                System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach After LoadApplication( SingleSplashApp....... {SingleSplashApp.stopWatch.Elapsed.TotalSeconds} ");
 #endif
 
 

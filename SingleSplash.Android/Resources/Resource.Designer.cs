@@ -2401,17 +2401,20 @@ namespace SingleSplash.Android
 			// aapt resource value: 0x7f0200b0
 			public const int notification_icon_background = 2130837680;
 			
-			// aapt resource value: 0x7f0200b3
-			public const int notification_template_icon_bg = 2130837683;
-			
 			// aapt resource value: 0x7f0200b4
-			public const int notification_template_icon_low_bg = 2130837684;
+			public const int notification_template_icon_bg = 2130837684;
+			
+			// aapt resource value: 0x7f0200b5
+			public const int notification_template_icon_low_bg = 2130837685;
 			
 			// aapt resource value: 0x7f0200b1
 			public const int notification_tile_bg = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
 			public const int notify_panel_notification_icon_bg = 2130837682;
+			
+			// aapt resource value: 0x7f0200b3
+			public const int splash_logo = 2130837683;
 			
 			static Drawable()
 			{

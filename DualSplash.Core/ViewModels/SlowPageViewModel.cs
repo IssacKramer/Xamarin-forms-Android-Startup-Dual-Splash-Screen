@@ -19,10 +19,10 @@
         {
 
 #if DEBUG
-            App.stopWatch.Stop();
+            SingleSplashApp.stopWatch.Stop();
 
-            System.Diagnostics.Debug.WriteLine("\n ---------------------------Reach After Page Load - Switch_OnToggled() !!! .... {0} ", App.stopWatch.Elapsed.TotalSeconds);
-            App.stopWatch.Start();
+            System.Diagnostics.Debug.WriteLine("\n ---------------------------Reach After Page Load - Switch_OnToggled() !!! .... {0} ", SingleSplashApp.stopWatch.Elapsed.TotalSeconds);
+            SingleSplashApp.stopWatch.Start();
 
 #endif
 
