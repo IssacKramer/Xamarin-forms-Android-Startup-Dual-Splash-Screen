@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using System.Threading.Tasks;
 using DualSplash.Core.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,13 +8,13 @@ using Xamarin.Forms.Xaml;
 namespace DualSplash.Core.Views
 {
 	
-	public partial class Page1 : ContentPage
+	public partial class SlowPage : ContentPage
 	{
-	    private Page1ViewModel vm;
-		public Page1 ()
+	    private SlowPageViewModel vm;
+		public SlowPage ()
 		{
 			InitializeComponent ();
-            vm=new Page1ViewModel();
+            vm=new SlowPageViewModel();
 		    BindingContext = vm;
 		    vm.ToggglePageLoadSwitch = true;
 		}
@@ -23,9 +24,10 @@ namespace DualSplash.Core.Views
             base.OnAppearing();
 
 #if TRACE
+            if(App.stopWatch==null) App.stopWatch=new Stopwatch();
             App.stopWatch.Stop();
 
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Page1  --Reach OnAppearing() !!! .... {App.stopWatch.Elapsed.TotalSeconds}") ;
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage  --Reach OnAppearing() !!! .... {App.stopWatch.Elapsed.TotalSeconds}") ;
             App.stopWatch.Start();
 
 #endif
@@ -41,7 +43,7 @@ namespace DualSplash.Core.Views
 #if TRACE
             App.stopWatch.Stop();
 
-	        System.Diagnostics.Trace.WriteLine($"\n ---------------------------Page1 Reach After Page Load - Switch_OnToggled() !!! .... {App.stopWatch.Elapsed.TotalSeconds}");
+	        System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage Reach After Page Load - Switch_OnToggled() !!! .... {App.stopWatch.Elapsed.TotalSeconds}");
 	        App.stopWatch.Start();
 
 #endif

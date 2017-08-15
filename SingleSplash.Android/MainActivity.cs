@@ -6,7 +6,7 @@ using DualSplash.Core;
 
 namespace SingleSplash.Android
 {
-    [Activity(Label = "ExDollar.Test.Vanilla.Android", MainLauncher = true , 
+    [Activity(Label = "SingleSplash.Android", MainLauncher = true , 
         Icon = "@drawable/icon",
          Theme = "@style/MainTheme"
         )]

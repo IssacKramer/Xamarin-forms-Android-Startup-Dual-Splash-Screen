@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DualSplash.Core.Views.SlowPage">
+    <ContentPage.Content>
+        
+        <Grid Margin="50" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"  />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Label1:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+            <Label Text="Label3:" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"/>
+            <Label Text="Label5:" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+            <Label Text="Label7:" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+            <Label Text="Label9:" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+            <Label Text="Label11:" Grid.Row="5" Grid.Column="0" VerticalOptions="Center"/>
+           
+           
+            
+            <Entry x:Name="Entry1" Grid.Row="0" Grid.Column="1"/>
+            <Entry x:Name="Entry2" Grid.Row="1" Grid.Column="1"/>
+            <Entry x:Name="Entry3" Grid.Row="2" Grid.Column="1"/>
+            <Entry x:Name="Entry4" Grid.Row="3" Grid.Column="1"/>
+            <Entry x:Name="Entry5" Grid.Row="4" Grid.Column="1"/>
+            <Entry x:Name="Entry6" Grid.Row="5" Grid.Column="1"/>
+           
+           
+            
+            
+            <Button Text="Button1" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Text="Button2" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Text="Button3" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Text="Button4" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Text="Button5" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" />
+            <Button Text="Button6" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" />
+           
+           
+
+            <Switch x:Name="swchLoadEvent"  Grid.Row="2" Grid.Column="2" IsToggled="{Binding ToggglePageLoadSwitch}" Toggled="Switch_OnToggled" IsVisible="False" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

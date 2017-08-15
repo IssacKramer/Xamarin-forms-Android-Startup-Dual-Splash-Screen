@@ -1,10 +1,10 @@
 ﻿namespace DualSplash.Core.ViewModels
 {
-    public class Page1ViewModel :MvvmHelpers.BaseViewModel
+    public class SlowPageViewModel :MvvmHelpers.BaseViewModel
     {
         private bool _toggglePageLoadSwitch;
 
-        public Page1ViewModel()
+        public SlowPageViewModel()
         {
 
         }

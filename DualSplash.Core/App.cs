@@ -31,26 +31,26 @@ namespace DualSplash.Core
 #if TRACE
 
             App.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - Start App Constructor before Page1 created---------:  {App.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - Start App Constructor before SlowPage created---------:  {App.stopWatch.Elapsed.TotalSeconds}");
             App.stopWatch.Start();
 
 #endif
 
 
             //var container = AppContainer.Container;
-            var page1 = new Page1();
-            //var dollarPage = container.Resolve<Page1>();
+            var page1 = new SlowPage();
+            //var dollarPage = container.Resolve<SlowPage>();
             RootNavigation = new NavigationPage(page1);
 #if TRACE
             App.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - After Page1 Created---------:  {App.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - After SlowPage Created---------:  {App.stopWatch.Elapsed.TotalSeconds}");
             App.stopWatch.Start();
 #endif
 
             MainPage = RootNavigation;
 #if TRACE
             App.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - After Set Navigation Page1---------:  {App.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------App.cs - After Set Navigation SlowPage---------:  {App.stopWatch.Elapsed.TotalSeconds}");
             App.stopWatch.Start();
 #endif
 

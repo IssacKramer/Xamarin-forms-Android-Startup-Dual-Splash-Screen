@@ -22,4 +22,11 @@
     <PackageReference Include="Xamarin.Forms" Version="2.3.5.259-pre6" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Compile Update="Views\SlowPage.xaml.cs">
+      <DependentUpon>SlowPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
