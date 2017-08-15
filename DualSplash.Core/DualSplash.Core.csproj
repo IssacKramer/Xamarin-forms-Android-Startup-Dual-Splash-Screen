@@ -17,9 +17,13 @@
 
 
   <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="6.3.11" />
+    <PackageReference Include="Autofac" Version="4.6.1" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.2.47-beta" />
     <PackageReference Include="System.Diagnostics.TraceSource" Version="4.3.0" />
     <PackageReference Include="Xamarin.Forms" Version="2.3.5.259-pre6" />
+    <PackageReference Include="XLabs.Forms" Version="2.3.0-pre05" />
+    <PackageReference Include="XLabs.IoC.Autofac" Version="2.3.0-pre05" />
   </ItemGroup>
 
 

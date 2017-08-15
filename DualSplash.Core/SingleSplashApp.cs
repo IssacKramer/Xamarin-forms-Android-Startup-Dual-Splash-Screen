@@ -29,9 +29,9 @@ namespace DualSplash.Core
 
 
             //var container = AppContainer.Container;
-            var page1 = new SlowPage();
+            var slowPage = new SlowPage();
             //var dollarPage = container.Resolve<SlowPage>();
-            RootNavigation = new NavigationPage(page1);
+            RootNavigation = new NavigationPage(slowPage);
 #if TRACE
             SingleSplashApp.stopWatch.Stop();
             System.Diagnostics.Trace.WriteLine($"\n ---------------------------SingleSplashApp.cs - After SlowPage Created---------:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
@@ -56,23 +56,6 @@ namespace DualSplash.Core
 
         }
 
-        protected override void OnStart()
-        {
-            base.OnStart();
-
-/*
-#if DEBUG
-
-            // AtrizA.Common.Utils.Utils.globalStopWatch = new Stopwatch();
-            SingleSplashApp.stopWatch = new Stopwatch();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Starting SingleSplashApp.OnStart :  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
-            SingleSplashApp.stopWatch.Start();
-            //AtrizA.Common.Utils.Utils.globalStopWatch.Start();
-
-#endif
-*/
-
-
-        }
+      
     }
 }

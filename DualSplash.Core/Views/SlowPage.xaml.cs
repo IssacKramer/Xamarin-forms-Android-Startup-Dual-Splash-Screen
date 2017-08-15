@@ -7,10 +7,11 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DualSplash.Core.Views
 {
+
 	
 	public partial class SlowPage : ContentPage
 	{
-	    private SlowPageViewModel vm;
+	    protected SlowPageViewModel vm;
 		public SlowPage ()
 		{
 			InitializeComponent ();
@@ -24,11 +25,11 @@ namespace DualSplash.Core.Views
             base.OnAppearing();
 
 #if TRACE
-            if(App.stopWatch==null) App.stopWatch=new Stopwatch();
-            App.stopWatch.Stop();
+            if(SingleSplashApp.stopWatch==null) SingleSplashApp.stopWatch=new Stopwatch();
+            SingleSplashApp.stopWatch.Stop();
 
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage  --Reach OnAppearing() !!! .... {App.stopWatch.Elapsed.TotalSeconds}") ;
-            App.stopWatch.Start();
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage  --Reach OnAppearing() !!! .... {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}") ;
+            SingleSplashApp.stopWatch.Start();
 
 #endif
 
@@ -37,14 +38,14 @@ namespace DualSplash.Core.Views
 
 
 
-	    public async void Switch_OnToggled(object sender, ToggledEventArgs e)
+	    public virtual async void Switch_OnToggled(object sender, ToggledEventArgs e)
 	    {
 
 #if TRACE
-            App.stopWatch.Stop();
+            SingleSplashApp.stopWatch.Stop();
 
-	        System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage Reach After Page Load - Switch_OnToggled() !!! .... {App.stopWatch.Elapsed.TotalSeconds}");
-	        App.stopWatch.Start();
+	        System.Diagnostics.Trace.WriteLine($"\n ---------------------------SlowPage Reach After Page Load - Switch_OnToggled() !!! .... {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+	        SingleSplashApp.stopWatch.Start();
 
 #endif
 
