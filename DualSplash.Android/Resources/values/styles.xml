@@ -23,8 +23,32 @@
     <item name="windowActionModeOverlay">true</item>
 
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+    <item name="android:windowBackground">@color/window_background</item>
+
   </style>
 
+  <style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen_xml</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="FirstScreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/first_screen_xml</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+  </style>
+
+  <style name="FirstScreen.Before" parent="FirstScreen">
+    <item name="android:windowAnimationStyle">@null</item>
+  </style>
+  <style name="FirstScreen.After" parent="MainTheme">
+    <item name="android:windowBackground">@drawable/first_screen_xml</item>
+    <item name="android:windowAnimationStyle">@null</item>
+  </style>
+  
+  
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>
   </style>
