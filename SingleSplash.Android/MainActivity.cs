@@ -163,15 +163,13 @@ namespace SingleSplash.Android
                     "ca-app-pub-XXXXXXXXXXXXXXXXXXXXXXXX"; 
                 //InterStitial_Android_AdMob.Get_ServiceInstance().Init_InterStitial(Admob_Interstit_Ad_UnitID, this);
 
-                //await Task.Delay(500); // Slow Init Code
-                Thread.Sleep(500);      //  3
+              
 
                 //init interstitial ad by Facebook
                 string Fb_PlacementID = "XXXXXXXXXXXXXXXXXXXXXXXXXX";
                 //InterStitial_Android_Facebook.Get_ServiceInstance().Init_InterStitial(Fb_PlacementID, this);
 
-                //await Task.Delay(500); // Slow Init Code
-                Thread.Sleep(500);  //  4
+               
 
                 //init interstitial ad Mock
                 //                string Stam_PlacementID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXX";
