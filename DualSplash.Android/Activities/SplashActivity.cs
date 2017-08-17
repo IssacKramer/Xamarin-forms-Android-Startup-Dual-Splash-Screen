@@ -76,13 +76,7 @@ namespace DualSplash.Android
                 //await Task.Delay(500); // slow analytics init
                 Thread.Sleep(500); // 1
 
-                // Slow Init Code
-                //await Task.Delay(500); // slow analytics init
-                Thread.Sleep(500); // 3
-
-                // Slow Init Code
-                //await Task.Delay(500); // slow analytics init
-                Thread.Sleep(500); // 4
+                
 
             }
             IsInitialized = true;
