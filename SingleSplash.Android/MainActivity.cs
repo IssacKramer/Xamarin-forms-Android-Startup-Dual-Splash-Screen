@@ -9,6 +9,7 @@ using Android.Runtime;
 using Android.Views;
 using Autofac;
 using DualSplash.Core;
+using DualSplash.Core.Ioc;
 using SingleSplash.Android.Ioc.Locator;
 using Xamarin;
 using Xamarin.Forms;
@@ -134,7 +135,7 @@ namespace SingleSplash.Android
                 //Ioc Container and Xlab Setup
 
                 //ViewModelLocator Init instead of bootstrapper init
-                Autofac.IContainer container =  ViewModelLocator.RegisterDependencies(false);
+                AppContainer.Container=  ViewModelLocator.RegisterDependencies(false);
 
                 //var container = AppContainer.Container;
 
@@ -148,7 +149,7 @@ namespace SingleSplash.Android
 #endif
 
 
-                IResolver autofacResolver = new AutofacResolver(container);
+                IResolver autofacResolver = new AutofacResolver(AppContainer.Container);
                 Resolver.SetResolver(autofacResolver);
 
 
