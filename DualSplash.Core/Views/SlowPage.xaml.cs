@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
+using Autofac;
+using DualSplash.Core.Ioc;
 using DualSplash.Core.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,9 +17,16 @@ namespace DualSplash.Core.Views
 		public SlowPage ()
 		{
 			InitializeComponent ();
-            vm=new SlowPageViewModel();
-		    BindingContext = vm;
-		    vm.ToggglePageLoadSwitch = true;
+		    if (AppContainer.Container != null)
+		    {
+
+		        using (var scope=AppContainer.Container.BeginLifetimeScope())
+		        {
+		            vm = scope.Resolve<SlowPageViewModel>();
+		        }
+		        BindingContext = vm;
+		        vm.ToggglePageLoadSwitch = true;
+		    }
 		}
 
         protected override void OnAppearing()

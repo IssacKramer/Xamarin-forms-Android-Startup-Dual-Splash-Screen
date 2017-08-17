@@ -1,4 +1,7 @@
 ﻿using System.Diagnostics;
+using Autofac;
+using DualSplash.Core.Ioc;
+using DualSplash.Core.ViewModels;
 using DualSplash.Core.Views;
 using Xamarin.Forms;
 
@@ -22,33 +25,41 @@ namespace DualSplash.Core
 #if TRACE
 
             DualSplashApp.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SingleSplashApp.cs - Start SingleSplashApp Constructor before SlowPage created---------:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------DualSplashApp.cs - Start DualSplashApp Constructor before SlowPage created---------:  {DualSplashApp.stopWatch.Elapsed.TotalSeconds}");
             DualSplashApp.stopWatch.Start();
 
 #endif
 
 
             //var container = AppContainer.Container;
-            var page1 = new SlowPage();
+            FastPage fastPage = null;
+            if (AppContainer.Container != null)
+            {
+
+                using (var scope = AppContainer.Container.BeginLifetimeScope())
+                {
+                    fastPage = scope.Resolve<FastPage>();
+                }
+            }
             //var dollarPage = container.Resolve<SlowPage>();
-            RootNavigation = new NavigationPage(page1);
+            RootNavigation = new NavigationPage(fastPage);
 #if TRACE
             DualSplashApp.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SingleSplashApp.cs - After SlowPage Created---------:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------DualSplashApp.cs - After SlowPage Created---------:  {DualSplashApp.stopWatch.Elapsed.TotalSeconds}");
             DualSplashApp.stopWatch.Start();
 #endif
 
             MainPage = RootNavigation;
 #if TRACE
             DualSplashApp.stopWatch.Stop();
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------SingleSplashApp.cs - After Set Navigation SlowPage---------:  {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------DualSplashApp.cs - After Set Navigation SlowPage---------:  {DualSplashApp.stopWatch.Elapsed.TotalSeconds}");
             DualSplashApp.stopWatch.Start();
 #endif
 
 #if TRACE
             DualSplashApp.stopWatch.Stop();
 
-            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach End SingleSplashApp Constructor MainPage=mainNav...... {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------Reach End DualSplashApp Constructor MainPage=mainNav...... {DualSplashApp.stopWatch.Elapsed.TotalSeconds}");
             DualSplashApp.stopWatch.Start();
 #endif
 
