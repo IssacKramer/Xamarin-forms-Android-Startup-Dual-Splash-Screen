@@ -214,6 +214,19 @@ namespace SingleSplash.Android
 
             }
         }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+#if TRACE
+            SingleSplashApp.stopWatch.Stop();
+            System.Diagnostics.Trace.WriteLine($"\n ---------------------------MainActivity - OnResume ...... {SingleSplashApp.stopWatch.Elapsed.TotalSeconds}");
+            SingleSplashApp.stopWatch.Start();
+#endif
+
+
+        }
     }
 }
 
