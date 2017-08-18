@@ -50,7 +50,7 @@ Credits to Ideas and components:
     
     <br>
     <br>
-
+![Which is faster?](https://github.com/IssacKramer/Xamarin-forms-Android-Startup-Dual-Splash-Screen/blob/master/WhichIsFaster.png "Which is faster?")
 -   This Repo contains 1 XF Core project and 2 android projects.
 
 1.  SingleSplash – the problem – here you'll see normal splash screen with long
