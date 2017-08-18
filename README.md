@@ -3,7 +3,7 @@ Xamarin-forms-Android-Startup-Dual-Splash-Screen
 
 A Solution to the known problem of Xamarin Forms's Android startup time.
 
-My solution after 2 weeks of work, for StartUp time on Android *Without AOT* is
+My solution after 2 weeks of work, for StartUp time on Android **Without AOT** is
 [Dual
 SplashScreen](https://github.com/IssacKramer/Xamarin-forms-Android-Startup-Dual-Splash-Screen)*.*
 
@@ -20,9 +20,7 @@ the rendering is finished, the image (as a background) is switched with the real
 Page.
 
 If we analyze the delay at the start (cold start), there are 2 kinds of delay:
-
 1.  Init code of different components (Forms.init, DI init (e.g. autofac etc.))
-
 2.  Rendering of the page.
 
 So, by splitting the init code to the first activity (SplashActivity) and
@@ -30,7 +28,7 @@ leaving only the Render delay to FirstScreen (or MainActivity) we can split the
 delay time by 2 pages, and that way the user sees **half** of the total delay,
 on each screen.
 
-Users starts to count the seconds on static screen. So, if you move fast to
+Users starts to count the seconds on **static screen**. So, if you move fast to
 another screen, you good. The perception now is the app starts FASTER (even
 actually, as you'll see later the app starts even slower a little bit).
 
@@ -38,18 +36,21 @@ I put on Github my solution
 [DualSplash](https://github.com/IssacKramer/Xamarin-forms-Android-Startup-Dual-Splash-Screen).
 Check it out.
 
-Credits to Ideas and components:
 
+Credits to Ideas and components:
 1.  Acr.UserDialogs of Allan Ritchie
     [AllanRitchie](https://forums.xamarin.com/profile/AllanRitchie).
-
 2.  XF Page_Load event by Mohamed Yousuf
     [yousufctec](https://forums.xamarin.com/profile/yousufctec).
-
 3.  Splash screen in XF by Adam Pedley
     [AdamP](https://forums.xamarin.com/profile/AdamP).
 
 4.  Thank you All!
+
+
+
+
+
 
 -   This Repo contains 1 XF Core project and 2 android projects.
 
@@ -61,9 +62,9 @@ Credits to Ideas and components:
     final interactive XF page) with progress bar Acr.UserDialogs of
      \@AllanRitchie(https://forums.xamarin.com/profile/AllanRitchie)
 
->   If you start the 2 apps, you can think app 2 -DualSplash is faster, but in
->   fact it is *slower* (on slow devices like nexus4) by 1sec (!) because the
->   added activity, but the init methods are the same.
+   If you start the 2 apps, you can think app 2 -DualSplash is faster, but in
+   fact it is *slower* (on slow devices like nexus4) by 1sec (!) because the
+   added activity, but the init methods are the same.
 
 Few Notes here:
 
