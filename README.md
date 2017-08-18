@@ -41,10 +41,10 @@ Check it out.
 Credits to Ideas and components:
 
 1.  Acr.UserDialogs of Allan Ritchie
-    \@AllanRitchie(https://forums.xamarin.com/profile/AllanRitchie).
+    [AllanRitchie](https://forums.xamarin.com/profile/AllanRitchie).
 
 2.  XF Page_Load event by Mohamed Yousuf
-    \@yousufctec(https://forums.xamarin.com/profile/yousufctec).
+    [yousufctec](https://forums.xamarin.com/profile/yousufctec).
 
 3.  Splash screen in XF by Adam Pedley
     [AdamP](https://forums.xamarin.com/profile/AdamP).
