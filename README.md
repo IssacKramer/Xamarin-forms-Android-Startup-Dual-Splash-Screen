@@ -45,7 +45,8 @@ Credits to Ideas and components:
 3.  Splash screen in XF by Adam Pedley
     [AdamP](https://forums.xamarin.com/profile/AdamP).
 
-4.  Thank you All!   
+4.  Thank you All!      
+
 
 
 
