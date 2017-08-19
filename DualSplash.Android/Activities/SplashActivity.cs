@@ -70,11 +70,11 @@ namespace DualSplash.Android
             //Activating UserDialogs
             Acr.UserDialogs.UserDialogs.Init((Activity)Forms.Context);
             
-            // Slow Init Code only needed at start
+            // Slow Init Code only needed at start -- moved to MainActivity on final tweak
             if (!IsInitialized)
             {
                 //await Task.Delay(500); // slow analytics init
-                Thread.Sleep(500); // 1
+//                Thread.Sleep(500); // 1
 
                 
 
@@ -136,9 +136,9 @@ namespace DualSplash.Android
             //GATracking_Android.GetGASInstance()
             //     .Initialize_NativeGAS("Stam", this); //"UA-XXXXXXXXX-X", this); //TrackingID first parameter
 
-            //init Insights
+            //init Insights -- moved to MainActivity on Final tweak
 //            if (bundle == null && !Insights.IsInitialized)
-            if (!Insights.IsInitialized)
+/*            if (!Insights.IsInitialized)
             {
                 Xamarin.Insights.Initialize("AppID",
                     ApplicationContext); //"b7015d6e120008cb54e81254b603f354855b059b", ApplicationContext);
@@ -148,7 +148,7 @@ namespace DualSplash.Android
                 Insights.DisableExceptionCatching = false;
             }
 
-
+*/
             //Init Code for Ads of Admob , Facebook , Leadbolt etc.
             //init interstitial ad by leadbolt
             string LeadBoltInterStitial_API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXX";

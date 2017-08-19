@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content.PM;
@@ -115,7 +116,9 @@ namespace DualSplash.Android
                                         GATracking_Android.GetGASInstance()
                                         .Initialize_NativeGAS("Stam", this); //"UA-40001613-3", this); //TrackingID first parameter
 
+                    etc........
 
+                    */
 
                                         //init Insights
                                         if (bundle == null && !Insights.IsInitialized)
@@ -129,10 +132,11 @@ namespace DualSplash.Android
                                         }
 
 
-                            etc......
-                    */
 
-                   
+                                        //await Task.Delay(500); // slow analytics init
+                                        Thread.Sleep(500); // 1
+
+
 
 
 
