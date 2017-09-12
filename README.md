@@ -48,9 +48,17 @@ Credits to Ideas and components:
 4.  Thank you All!  
   
     
-    <br>
-    <br>
+    <br/>
+    <br/>
 <img src="https://github.com/IssacKramer/Xamarin-forms-Android-Startup-Dual-Splash-Screen/blob/master/WhichIsFaster.png" width="400" alt="Dual Splash">
+<br/>
+<div>
+<p>
+<img src="https://us.v-cdn.net/5019960/uploads/editor/xv/0pvmp0jiz9xw.gif" width="400" alt="image" style="float: left;">
+<img src="https://us.v-cdn.net/5019960/uploads/editor/r4/9wk0m5av82mh.gif" width="400" alt="image" style="float: right;"></p>
+</div>
+
+<br>
 -   This Repo contains 1 XF Core project and 2 android projects.
 
 1.  SingleSplash – the problem – here you'll see normal splash screen with long
